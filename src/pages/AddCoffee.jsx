@@ -1,4 +1,5 @@
 import React from "react";
+import { FaArrowLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
@@ -32,13 +33,16 @@ const AddCoffee = () => {
             icon: "success",
             confirmButtonText: "Cool",
           });
+          form.reset();
         }
       });
   };
   return (
     <>
       <Link to="/">
-        <button>Back To Home</button>
+        <button className="inline-flex items-center gap-2">
+          <FaArrowLeft /> Back To Home
+        </button>
       </Link>
       <div className="bg-[#F4F3F0] p-24">
         <h2 className="text-4xl">Add Coffee</h2>
