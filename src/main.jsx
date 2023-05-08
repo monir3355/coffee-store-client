@@ -6,6 +6,8 @@ import "./index.css";
 import Main from "./layout/Main";
 import Home from "./pages/home/Home";
 import About from "./pages/About";
+import AddCoffee from "./pages/AddCoffee";
+import UpdateCoffee from "./pages/UpdateCoffee";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +21,14 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
+      },
+      {
+        path: "/addcoffee",
+        element: <AddCoffee />,
+      },
+      {
+        path: "/updatecoffee",
+        element: <UpdateCoffee />,
       },
     ],
   },
