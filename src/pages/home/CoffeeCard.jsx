@@ -52,7 +52,10 @@ const CoffeeCard = ({ coffee }) => {
           <Link className="p-2 bg-[#D2B48C] rounded-md text-white">
             <FaEye />
           </Link>
-          <Link className="p-2 bg-black rounded-md text-white">
+          <Link
+            to={`/updatecoffee/${_id}`}
+            className="p-2 bg-black rounded-md text-white"
+          >
             <FaRegEdit />
           </Link>
           <Link

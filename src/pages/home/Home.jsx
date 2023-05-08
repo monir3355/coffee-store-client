@@ -19,7 +19,7 @@ const Home = () => {
         </Link>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {loaderCoffee.map((coffee) => (
+        {loaderCoffee?.map((coffee) => (
           <CoffeeCard key={coffee._id} coffee={coffee}></CoffeeCard>
         ))}
       </div>
