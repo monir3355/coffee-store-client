@@ -39,12 +39,14 @@ const AddCoffee = () => {
   };
   return (
     <>
-      <Link to="/">
-        <button className="inline-flex items-center gap-2">
-          <FaArrowLeft /> Back To Home
-        </button>
-      </Link>
-      <div className="bg-[#F4F3F0] p-24">
+      <div className="container mx-auto mt-12 mb-6">
+        <Link to="/">
+          <button className="inline-flex items-center gap-2">
+            <FaArrowLeft /> Back To Home
+          </button>
+        </Link>
+      </div>
+      <div className="bg-[#F4F3F0] p-12 lg:p-24 container mx-auto rounded-lg mb-12">
         <h2 className="text-4xl">Add Coffee</h2>
         <p>
           It is a long established fact that a reader will be distraceted by the

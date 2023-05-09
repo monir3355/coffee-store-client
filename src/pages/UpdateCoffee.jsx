@@ -47,134 +47,138 @@ const UpdateCoffee = () => {
       });
   };
   return (
-    <>
-      <Link to="/">
-        <button className="inline-flex items-center gap-2">
-          <FaArrowLeft /> Back To Home
-        </button>
-      </Link>
-      <div className="bg-[#F4F3F0] p-24">
-        <h2 className="text-4xl">Update Coffee</h2>
-        <div>
-          <form onSubmit={handleUpdatedCoffee}>
-            {/* Row 1 */}
-            <div className="md:flex gap-6 my-3">
-              <div className="form-control md:w-1/2">
-                <label className="label">
-                  <span className="label-text">Name</span>
-                </label>
-                <label className="input-group">
-                  <input
-                    type="text"
-                    name="name"
-                    defaultValue={name}
-                    placeholder="Enter coffee name"
-                    className="input w-full"
-                  />
-                </label>
+    <div className="container mx-auto">
+      <div className="py-12">
+        <div className="py-4">
+          <Link to="/">
+            <button className="inline-flex items-center gap-2">
+              <FaArrowLeft /> Back To Home
+            </button>
+          </Link>
+        </div>
+        <div className="bg-[#F4F3F0] p-12 lg:p-24 rounded-lg">
+          <h2 className="text-4xl">Update Coffee</h2>
+          <div>
+            <form onSubmit={handleUpdatedCoffee}>
+              {/* Row 1 */}
+              <div className="md:flex gap-6 my-3">
+                <div className="form-control md:w-1/2">
+                  <label className="label">
+                    <span className="label-text">Name</span>
+                  </label>
+                  <label className="input-group">
+                    <input
+                      type="text"
+                      name="name"
+                      defaultValue={name}
+                      placeholder="Enter coffee name"
+                      className="input w-full"
+                    />
+                  </label>
+                </div>
+                <div className="form-control md:w-1/2 mt-3 md:mt-0">
+                  <label className="label">
+                    <span className="label-text">Chef</span>
+                  </label>
+                  <label className="input-group">
+                    <input
+                      type="text"
+                      name="chef"
+                      defaultValue={chef}
+                      placeholder="Enter coffee Chef"
+                      className="input w-full"
+                    />
+                  </label>
+                </div>
               </div>
-              <div className="form-control md:w-1/2 mt-3 md:mt-0">
-                <label className="label">
-                  <span className="label-text">Chef</span>
-                </label>
-                <label className="input-group">
-                  <input
-                    type="text"
-                    name="chef"
-                    defaultValue={chef}
-                    placeholder="Enter coffee Chef"
-                    className="input w-full"
-                  />
-                </label>
+              {/* row 2 */}
+              <div className="md:flex gap-6 my-3">
+                <div className="form-control md:w-1/2">
+                  <label className="label">
+                    <span className="label-text">Supplier</span>
+                  </label>
+                  <label className="input-group">
+                    <input
+                      type="text"
+                      name="supplier"
+                      defaultValue={supplier}
+                      placeholder="Enter coffee Supplier"
+                      className="input w-full"
+                    />
+                  </label>
+                </div>
+                <div className="form-control md:w-1/2 mt-3 md:mt-0">
+                  <label className="label">
+                    <span className="label-text">Taste</span>
+                  </label>
+                  <label className="input-group">
+                    <input
+                      type="text"
+                      name="taste"
+                      defaultValue={taste}
+                      placeholder="Enter coffee Taste"
+                      className="input w-full"
+                    />
+                  </label>
+                </div>
               </div>
-            </div>
-            {/* row 2 */}
-            <div className="md:flex gap-6 my-3">
-              <div className="form-control md:w-1/2">
-                <label className="label">
-                  <span className="label-text">Supplier</span>
-                </label>
-                <label className="input-group">
-                  <input
-                    type="text"
-                    name="supplier"
-                    defaultValue={supplier}
-                    placeholder="Enter coffee Supplier"
-                    className="input w-full"
-                  />
-                </label>
+              {/* Row 3 */}
+              <div className="md:flex gap-6 my-3">
+                <div className="form-control md:w-1/2">
+                  <label className="label">
+                    <span className="label-text">Category</span>
+                  </label>
+                  <label className="input-group">
+                    <input
+                      type="text"
+                      name="category"
+                      defaultValue={category}
+                      placeholder="Enter coffee Category"
+                      className="input w-full"
+                    />
+                  </label>
+                </div>
+                <div className="form-control md:w-1/2 mt-3 md:mt-0">
+                  <label className="label">
+                    <span className="label-text">Details</span>
+                  </label>
+                  <label className="input-group">
+                    <input
+                      type="text"
+                      name="details"
+                      defaultValue={details}
+                      placeholder="Enter coffee Details"
+                      className="input w-full"
+                    />
+                  </label>
+                </div>
               </div>
-              <div className="form-control md:w-1/2 mt-3 md:mt-0">
-                <label className="label">
-                  <span className="label-text">Taste</span>
-                </label>
-                <label className="input-group">
-                  <input
-                    type="text"
-                    name="taste"
-                    defaultValue={taste}
-                    placeholder="Enter coffee Taste"
-                    className="input w-full"
-                  />
-                </label>
+              {/* Row 4 */}
+              <div className="md:flex gap-6 my-3">
+                <div className="form-control w-full">
+                  <label className="label">
+                    <span className="label-text">Photo</span>
+                  </label>
+                  <label className="input-group">
+                    <input
+                      type="text"
+                      name="photo"
+                      defaultValue={photo}
+                      placeholder="Enter Photo URL"
+                      className="input w-full"
+                    />
+                  </label>
+                </div>
               </div>
-            </div>
-            {/* Row 3 */}
-            <div className="md:flex gap-6 my-3">
-              <div className="form-control md:w-1/2">
-                <label className="label">
-                  <span className="label-text">Category</span>
-                </label>
-                <label className="input-group">
-                  <input
-                    type="text"
-                    name="category"
-                    defaultValue={category}
-                    placeholder="Enter coffee Category"
-                    className="input w-full"
-                  />
-                </label>
+              {/* button */}
+              <div className="text-center">
+                <button className="btn w-full mt-6">Update Coffee</button>
               </div>
-              <div className="form-control md:w-1/2 mt-3 md:mt-0">
-                <label className="label">
-                  <span className="label-text">Details</span>
-                </label>
-                <label className="input-group">
-                  <input
-                    type="text"
-                    name="details"
-                    defaultValue={details}
-                    placeholder="Enter coffee Details"
-                    className="input w-full"
-                  />
-                </label>
-              </div>
-            </div>
-            {/* Row 4 */}
-            <div className="md:flex gap-6 my-3">
-              <div className="form-control w-full">
-                <label className="label">
-                  <span className="label-text">Photo</span>
-                </label>
-                <label className="input-group">
-                  <input
-                    type="text"
-                    name="photo"
-                    defaultValue={photo}
-                    placeholder="Enter Photo URL"
-                    className="input w-full"
-                  />
-                </label>
-              </div>
-            </div>
-            {/* button */}
-            <div className="text-center">
-              <button className="btn w-full mt-6">Update Coffee</button>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

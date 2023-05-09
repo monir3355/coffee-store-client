@@ -60,12 +60,12 @@ const CoffeeCard = ({ coffee, coffees, setCoffees }) => {
           >
             <FaRegEdit />
           </Link>
-          <Link
+          <button
             onClick={() => handleCoffeeDelete(_id)}
             className="p-2 bg-red-500 rounded-md text-white"
           >
             <FaTrashAlt />
-          </Link>
+          </button>
         </div>
       </div>
     </>
