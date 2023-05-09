@@ -7,6 +7,7 @@ import Banner from "../../components/Banner";
 const Home = () => {
   const loaderCoffees = useLoaderData();
   const [coffees, setCoffees] = useState(loaderCoffees);
+  console.log(coffees);
   return (
     <>
       <Banner />

@@ -9,6 +9,7 @@ import About from "./pages/About";
 import AddCoffee from "./pages/AddCoffee";
 import UpdateCoffee from "./pages/UpdateCoffee";
 import Contact from "./pages/Contact";
+import CoffeeDetails from "./pages/CoffeeDetails";
 
 const router = createBrowserRouter([
   {
@@ -18,7 +19,8 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-        loader: () => fetch("http://localhost:5000/coffee"),
+        loader: () =>
+          fetch("https://coffee-store-server-gold.vercel.app/coffee"),
       },
       {
         path: "/about",
@@ -36,7 +38,17 @@ const router = createBrowserRouter([
         path: "/updatecoffee/:id",
         element: <UpdateCoffee />,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/coffee/${params.id}`),
+          fetch(
+            `https://coffee-store-server-gold.vercel.app/coffee/${params.id}`
+          ),
+      },
+      {
+        path: "/coffeeDetail/:id",
+        element: <CoffeeDetails />,
+        loader: ({ params }) =>
+          fetch(
+            `https://coffee-store-server-gold.vercel.app/coffee/${params.id}`
+          ),
       },
     ],
   },
